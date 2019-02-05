@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <LinearLayout android:id="@+id/thumbnail1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_toLeftOf="@id/arrow"
+        android:padding="1dip"
+        android:layout_alignTop="@id/description"
+        android:background="@drawable/image_bg"
+        android:layout_marginRight="1dip">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="1dp" />
+
+    </LinearLayout>
+
+    <!-- Title Of Feed -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sample text"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"/>
+
+    <!-- Description of Feed -->
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:textColor="#343434"
+        android:layout_marginTop="1dip"
+        android:layout_toLeftOf="@+id/thumbnail1"
+        android:text="Just gona stand there and ..." />
+
+    <!-- Rightend Arrow -->
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>
